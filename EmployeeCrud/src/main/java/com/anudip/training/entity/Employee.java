@@ -6,19 +6,9 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 @Entity
 @Table(name = "Employee_Crud")
-@AllArgsConstructor
-@NoArgsConstructor
-@Data
-@Getter
-@Setter
 public class Employee {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -63,8 +53,7 @@ public class Employee {
 	}
 
 	public void setUpdated(boolean b) {
-		// TODO Auto-generated method stub
-		
+
 	}
 
 }

@@ -4,14 +4,22 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.anudip.training.entity.Employee;
+import com.anudip.training.exception.EmployeeNotFound;
 import com.anudip.training.repository.EmployeeRepository;
 import com.anudip.training.service.EmployeeService;
 
+@Service
 public class EmployeeServiceImpl implements EmployeeService {
-	@Autowired
+
 	EmployeeRepository employeeRepository;
+
+	public EmployeeServiceImpl(EmployeeRepository employeeRepository) {
+		super();
+		this.employeeRepository = employeeRepository;
+	}
 
 	@Override
 	public List<Employee> findAll() {
@@ -26,7 +34,12 @@ public class EmployeeServiceImpl implements EmployeeService {
 	@Override
 	public Employee getEmployeeById(int id) {
 		Optional<Employee> optionalEmployee = employeeRepository.findById(id);
-		return optionalEmployee.orElse(null);
+		try {
+			return optionalEmployee.orElseThrow(()-> new EmployeeNotFound ("This employee is not present!..."));
+		} catch (EmployeeNotFound e) {
+			e.printStackTrace();
+		}
+		return null;
 	}
 
 	@Override

@@ -14,38 +14,38 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.anudip.training.entity.Employee;
-import com.anudip.training.service.EmployeeService;
+import com.anudip.training.serviceimpl.EmployeeServiceImpl;
 
 @RestController
 @RequestMapping("/api/v1")
 @CrossOrigin(origins = "http://localhost:4200")
 public class EmployeeController {
 	@Autowired
-	public EmployeeService employeeService;
+	public EmployeeServiceImpl employeeServiceImpl;
 
 	@PostMapping("/Employees")
 	public Employee createEmployee(@RequestBody Employee emoloyee) {
-		return employeeService.addEmployee(emoloyee);
+		return employeeServiceImpl.addEmployee(emoloyee);
 	}
 
 	@GetMapping("/Employees")
 	public List<Employee> getAllEmployee() {
-		return employeeService.findAll();
+		return employeeServiceImpl.findAll();
 	}
 
 	@GetMapping("/Employees/{id}")
 	public Employee getEmployeeById(@PathVariable int id) {
-		return employeeService.getEmployeeById(id);
+		return employeeServiceImpl.getEmployeeById(id);
 	}
 
 	@PutMapping("/Employees")
 	public ResponseEntity<Employee> deleteEmployee(Employee emp) {
-		Employee employee = employeeService.deleteEmployee(emp);
+		Employee employee = employeeServiceImpl.deleteEmployee(emp);
 		return ResponseEntity.ok().body(employee);
 	}
 
 	@PutMapping("/Employees/{id}")
 	public Employee updateEmployee(@PathVariable int id) {
-		return employeeService.updateEmployee(id);
+		return employeeServiceImpl.updateEmployee(id);
 	}
 }

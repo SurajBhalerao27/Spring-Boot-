@@ -6,7 +6,6 @@ import org.springframework.stereotype.Service;
 
 import com.anudip.training.entity.Employee;
 
-@Service
 public interface EmployeeService {
 	
 	public List<Employee> findAll();
