@@ -1,0 +1,22 @@
+                                                                                                                                                                                                                                                                         
+   SSSSSSSSSSSSSSS      UUUUUUUU     UUUUUUUU     RRRRRRRRRRRRRRRRR                       AAA                              JJJJJJJJJJJ
+ SS:::::::::::::::S     U::::::U     U::::::U     R::::::::::::::::R                     A:::A                             J:::::::::J
+S:::::SSSSSS::::::S     U::::::U     U::::::U     R::::::RRRRRR:::::R                   A:::::A                            J:::::::::J
+S:::::S     SSSSSSS     UU:::::U     U:::::UU     RR:::::R     R:::::R                 A:::::::A                           JJ:::::::JJ
+S:::::S                  U:::::U     U:::::U        R::::R     R:::::R                A:::::::::A                            J:::::J  
+S:::::S                  U:::::D     D:::::U        R::::R     R:::::R               A:::::A:::::A                           J:::::J  
+ S::::SSSS               U:::::D     D:::::U        R::::RRRRRR:::::R               A:::::A A:::::A                          J:::::J  
+  SS::::::SSSSS          U:::::D     D:::::U        R:::::::::::::RR               A:::::A   A:::::A                         J:::::j  
+    SSS::::::::SS        U:::::D     D:::::U        R::::RRRRRR:::::R             A:::::A     A:::::A                        J:::::J  
+       SSSSSS::::S       U:::::D     D:::::U        R::::R     R:::::R           A:::::AAAAAAAAA:::::A           JJJJJJJ     J:::::J  
+            S:::::S      U:::::D     D:::::U        R::::R     R:::::R          A:::::::::::::::::::::A          J:::::J     J:::::J  
+            S:::::S      U::::::U   U::::::U        R::::R     R:::::R         A:::::AAAAAAAAAAAAA:::::A         J::::::J   J::::::J  
+SSSSSSS     S:::::S      U:::::::UUU:::::::U      RR:::::R     R:::::R        A:::::A             A:::::A        J:::::::JJJ:::::::J  
+S::::::SSSSSS:::::S       UU:::::::::::::UU       R::::::R     R:::::R       A:::::A               A:::::A        JJ:::::::::::::JJ   
+S:::::::::::::::SS          UU:::::::::UU         R::::::R     R:::::R      A:::::A                 A:::::A         JJ:::::::::JJ     
+ SSSSSSSSSSSSSSS              UUUUUUUUU           RRRRRRRR     RRRRRRR     AAAAAAA                   AAAAAAA          JJJJJJJJJ    
+ ${application.title} ${application.version}
+ Powered by Spring Boot ${spring-boot.version}
+  																				    
+-------------------------------------------------------< Mr Modern >-------------------------------------------------------------------
+                                                                                                                                                                                                                                                                          
